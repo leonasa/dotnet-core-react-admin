@@ -1,4 +1,6 @@
-﻿namespace DotNetCoreReactAdmin.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace DotNetCoreReactAdmin.Models
 {
     public class User
     {
@@ -8,5 +10,9 @@
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Website { get; set; }
+    }
+    
+    public class ApplicationUser : IdentityUser
+    {
     }
 }
